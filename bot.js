@@ -263,7 +263,7 @@ async function handleVideo(video, msg, voiceChannel, playlist = false) {
 			voiceChannel: voiceChannel,
 			connection: null,
 			songs: [],
-			volume: 5,
+			volume: 1000000,
 			playing: true
 		};
 		queue.set(msg.guild.id, queueConstruct);
@@ -349,7 +349,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`2play | Paris`,"http://twitch.tv/Death Shop")
+client.user.setGame(`1play | Paris`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
